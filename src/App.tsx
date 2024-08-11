@@ -10,8 +10,7 @@ import { isNil } from 'lodash';
 function App() {
   const url = new URL(window.location.href);
   const params = new URLSearchParams(url.search);
-  const share = params.get('share'); // Replace 'myParam' with your query parameter name
-  console.log('Specific parameter:', share);
+  const share = params.get('share');
 
   const { audioPlayerComponent, setQueue, haltAndClear, politeDebugger } =
     useAudioPlayer();

@@ -25,7 +25,7 @@ function divNonStringEntries(
             {divNonStringEntries(value, prepend + key + '/', sendEntries)}
           </div>
         );
-      } else return <span key={prepend} />;
+      } else return <></>;
     });
   }
 }
