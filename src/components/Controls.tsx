@@ -28,7 +28,7 @@ export const Controls = (props: IProps) => {
       >
         SHARE
       </div>
-      {shareLink && <div>{shareLink}</div>}
+      {shareLink && <div style={{ wordBreak: 'break-word' }}>{shareLink}</div>}
     </div>
   );
 };
