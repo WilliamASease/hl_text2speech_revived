@@ -1,6 +1,6 @@
 # Define the directory to map and the output JSON file
-$directoryPath = ".\snd"   # Replace with your relative directory path
-$outputJsonFile = ".\sndMap.json"  # Replace with your desired output file path
+$directoryPath = "./snd"   # Replace with your relative directory path
+$outputJsonFile = "src/defs/sndMap.json"  # Replace with your desired output file path
 
 # Function to recursively map the directory structure
 function Get-DirectoryStructure {
@@ -18,7 +18,7 @@ function Get-DirectoryStructure {
             $structure[$item.Name] = Get-DirectoryStructure -path $item.FullName
         } else {
             # It's a file
-            $structure[$item.Name] = $item.FullName
+            $structure[[System.IO.Path]::GetFileNameWithoutExtension($item.Name)] = $item.FullName -split '\\snd\\' | Select-Object -Last 1
         }
     }
 
