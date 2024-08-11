@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.16a9c17f.css",
-    "main.js": "/static/js/main.46c233fc.js",
-    "index.html": "/index.html",
-    "main.16a9c17f.css.map": "/static/css/main.16a9c17f.css.map",
-    "main.46c233fc.js.map": "/static/js/main.46c233fc.js.map"
+    "main.css": "./hl_text2speech_revived/build/static/css/main.16a9c17f.css",
+    "main.js": "./hl_text2speech_revived/build/static/js/main.46c233fc.js",
+    "index.html": "./hl_text2speech_revived/build/index.html",
+    "main.16a9c17f.css.map": "./hl_text2speech_revived/build/static/css/main.16a9c17f.css.map",
+    "main.46c233fc.js.map": "./hl_text2speech_revived/build/static/js/main.46c233fc.js.map"
   },
   "entrypoints": [
     "static/css/main.16a9c17f.css",
